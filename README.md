@@ -49,9 +49,12 @@ Useful commands:
 
 Alright, now you gotta to create a .env file in the root folder and copy and paste from the .env.example. 😀🪄
 
-Run directly in the folder after creating the database on docker: 😃
-npm install
-npx prisma generate 
-npx prisma migrate dev
+Run directly in the folder after creating the database on docker:😃
+>> npm install
+>> npx prisma generate 
+>> npx prisma migrate dev
+
+
+
 
 
