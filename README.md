@@ -29,3 +29,29 @@ _GymPass Style App._
 - [X] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [X] Todas listas de dados precisam estar paginadas com 20 itens por página;
 - [X] O usuário deve ser identificado por um JWT (JSON Web Token);
+
+****************************************
+How to run the project in a new machine: 👇📡
+****************************************
+You gotta to:📱
+1º - Download and install Docker.🙂
+**You have to check if docker has installed properly (linux subsystem and updates)**🫠🌜
+2º - Create a DATABASE by running this line on powershell:🙃
+>> docker run --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql 😐🐧
+
+This may create the database now u can run it directly on the interface of the program or run: 🤨
+>> docker run api-solid-pg 🫢
+
+
+Useful commands:
+>> docker ps (see the containers running)
+>> docker ps -a (see all containers ever created)
+
+Alright, now you gotta to create a .env file in the root folder and copy and paste from the .env.example. 😀🪄
+
+Run directly in the folder after creating the database on docker: 😃
+npm install
+npx prisma generate 
+npx prisma migrate dev
+
+
